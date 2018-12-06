@@ -1,27 +1,27 @@
 //json数据文件
 var id_user_data = [
     //Infobip
-    {
-        supplier: 'Infobip',
-        operator: 'Talin',
-        mobile: '6281310054528',
-        chan: '-902',
-        english: false
-    },
-    {
-        supplier: 'Infobip',
-        operator: 'Indosat',
-        mobile: '6285772830498',
-        chan: '-902',
-        english: false
-    },
-    {
-        supplier: 'Infobip',
-        operator: 'Three',
-        mobile: '628995569988',
-        chan: '-902',
-        english: false
-    },
+    // {
+    //     supplier: 'Infobip',
+    //     operator: 'Talin',
+    //     mobile: '6281310054528',
+    //     chan: '-902',
+    //     english: false
+    // },
+    // {
+    //     supplier: 'Infobip',
+    //     operator: 'Indosat',
+    //     mobile: '6285772830498',
+    //     chan: '-902',
+    //     english: false
+    // },
+    // {
+    //     supplier: 'Infobip',
+    //     operator: 'Three',
+    //     mobile: '628995569988',
+    //     chan: '-902',
+    //     english: false
+    // },
     //IMS
     {
         supplier: 'IMS',
@@ -44,28 +44,28 @@ var id_user_data = [
         chan: '-924',
         english: true
     },
-    //Monty
-    {
-        supplier: 'Monty',
-        operator: 'Talin',
-        mobile: '6281310054528',
-        chan: '-924',
-        english: false
-    },
-    {
-        supplier: 'Monty',
-        operator: 'Indosat',
-        mobile: '6285772830498',
-        chan: '-924',
-        english: false
-    },
-    {
-        supplier: 'Monty',
-        operator: 'Three',
-        mobile: '628995569988',
-        chan: '-902',
-        english: false
-    }
+    // //Monty
+    // {
+    //     supplier: 'Monty',
+    //     operator: 'Talin',
+    //     mobile: '6281310054528',
+    //     chan: '-924',
+    //     english: false
+    // },
+    // {
+    //     supplier: 'Monty',
+    //     operator: 'Indosat',
+    //     mobile: '6285772830498',
+    //     chan: '-924',
+    //     english: false
+    // },
+    // {
+    //     supplier: 'Monty',
+    //     operator: 'Three',
+    //     mobile: '628995569988',
+    //     chan: '-902',
+    //     english: false
+    // }
 ]
 
 //test
