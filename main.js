@@ -1,3 +1,4 @@
+
 //导入模块
 var http = require("http");
 var querystring = require('querystring');
@@ -13,9 +14,10 @@ var en_send_data = info.en_send_data;
 
 //参数初始化
 var post_data = {
-    apikey: '6fd8dfbb18f5c8214b90c1e3a2cd7ae0',
+    apikey: '',
     mobile: '13758242114',
-    text: '【云片test】测试模版测试模版'
+    text: '【云片test】测试模版测试模版',
+    chan:''
 };//这是需要提交的数据
 
 var content = querystring.stringify(post_data);
@@ -51,7 +53,7 @@ function sendpost(cont) {
 }
 
 //重新设置通用信息
-// post_data['apikey'] = '4be9ad8f18b82d004a4f9f97c85291ce';
+// post_data['apikey'] = '';
 
 //所有发送队列
 var all_send_content = [];
@@ -63,10 +65,9 @@ id_user_data.forEach(function (info, index0, arr) {
         //send 3&6
         en_send_data.forEach(function (text, index) {
             // post_data['mobile'] = info['mobile'];
-            // post_data['mobile'] = encodeURIComponent("+") + info['mobile'];
             post_data['mobile'] = "+" + info['mobile'];
-
             post_data['text'] = text + '+' + info['supplier'] + '+' + info['operator'] + '+' + info['chan'];
+            post_data['chan'] = info['chan'];
             content = querystring.stringify(post_data);
             all_send_content.push(content);
 
@@ -78,9 +79,8 @@ id_user_data.forEach(function (info, index0, arr) {
             // post_data['mobile'] = info['mobile'];
             // post_data['mobile'] = encodeURIComponent("+") + info['mobile'];
             post_data['mobile'] = "+" + info['mobile'];
-
             post_data['text'] = text + '+' + info['supplier'] + '+' + info['operator'] + '+' + info['chan'];
-
+            post_data['chan'] = info['chan'];
             content = querystring.stringify(post_data);
             all_send_content.push(content);
             // console.log(index0,index,post_data)
